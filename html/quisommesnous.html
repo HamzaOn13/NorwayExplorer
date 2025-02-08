@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Rubik+Wet+Paint&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Rubik+Wet+Paint&family=Titan+One&family=Trade+Winds&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Miltonian+Tattoo&family=Rubik+Wet+Paint&family=Titan+One&family=Trade+Winds&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Miltonian+Tattoo&family=Rubik+Wet+Paint&family=Titan+One&family=Trade+Winds&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/quisommesnous.css">
+    <title>QUI SOMMES NOUS</title>
+    <nav class="banniere">
+        <p>Velkommen til Norges vakreste landskap!</p>
+    </nav>
+    <nav class="nav">
+        <div class="nav1">
+            <img src="../images/drapeau.png" alt="">
+            <p>VELKOMMEN <br>TIL NORGE</p>
+        </div>
+        <div class="nav2">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="plansite.html">Plan de site</a></li>
+                <li><a href="quisommesnous.html">Qui sommes nous ?</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</head>
+<body>
+    <div class="aa">
+        <ul>
+            <li><a href="sites.html">Sites et Monuments</a></li>
+            <li><a href="ville.html">Index des villes</a></li>
+            <li><a href="map.html">Google map</a></li>
+            <li><a href="liens.html">Liens utiles</a></li>
+        </ul>
+    </div>
+    <div class="right-sidebar hidden" id="sidebar">
+        <iframe src="https://www.youtube.com/embed/pdueqhNqwrs" frameborder="2" allowfullscreen class="ifr"></iframe>
+        <iframe src="../php/news.php" frameborder="2" class="iframephp" class="ifr1" height="310px"></iframe>
+
+        
+
+    <!-- Modale contenant l'iframe -->
+    <div id="iframeModal">
+        <iframe id="modalIframe" src=""></iframe>
+    </div>
+
+    <script>
+        // Fonction pour ouvrir l'iframe dans la modale
+        function openIframe() {
+            document.getElementById("iframeModal").style.display = "block";  // Afficher la modale
+            document.getElementById("modalIframe").src = "../php/tousnews.php"; // Charger le contenu de l'iframe
+        }
+
+        function closeIframe() {
+            document.getElementById("iframeModal").style.display = "none";  // Cacher la modale
+            document.getElementById("modalIframe").src = ""; // Supprimer le contenu de l'iframe
+        }
+
+        document.getElementById('modalIframe').style.width = '760px';
+        document.getElementById('modalIframe').style.height = '400px';
+
+
+
+    </script>
+    </div>
+    <button id="toggleButton" class="toggle-button"><</button>
+    <section class="profile-section">
+        <div class="profile-card">
+            <h2>Ouhssain Hamza</h2>
+            <p>CNE: N111111111</p>
+            <p>Email: ham.ouh@gmail.com</p>
+            <div class="hexagon">
+                <span>Ouhssain Hamza</span>
+            </div>
+        </div>
+        <div class="profile-card">
+            <h2>Rherib Abdelhamid</h2>
+            <p>CNE: N111111111</p>
+            <p>Email: ham.rhe@gmail.com</p>
+            <div class="hexagon">
+                <span>Rherib Abdelhamid</span>
+            </div>
+        </div>
+    </section>   
+    <script >
+        function showRegisterForm() {
+            document.getElementById('loginForm').classList.remove('active');
+            document.getElementById('registerForm').classList.add('active');
+        }
+
+        function showLoginForm() {
+            document.getElementById('registerForm').classList.remove('active');
+            document.getElementById('loginForm').classList.add('active');
+        }
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggleButton = document.getElementById("toggleButton");
+            const sidebar = document.getElementById("sidebar");
+
+            toggleButton.addEventListener("click", () => {
+                const isHidden = sidebar.classList.contains("hidden");
+                if (isHidden) {
+                    sidebar.classList.remove("hidden");
+                    toggleButton.innerHTML = ">";
+                } else {
+                    sidebar.classList.add("hidden");
+                    toggleButton.innerHTML = "<";
+                }
+            });
+        });
+
+    </script>   
+</body>
+
+<footer>
+    <span>Suggestions</span>
+    <span>Conditions d'utilisation</span>
+    <span>Copyright 2024-2025</span>
+</footer>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Rubik+Wet+Paint&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Rubik+Wet+Paint&family=Titan+One&family=Trade+Winds&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Norvège</title>
+    <nav class="banniere">
+        <p>Velkommen til Norges vakreste landskap!</p>
+    </nav>
+    <nav class="nav">
+        <div class="nav1">
+            <img src="../images/drapeau.png" alt="">
+            <p>VELKOMMEN <br>TIL NORGE</p>
+        </div>
+        <div class="nav2">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="plansite.html">Plan de site</a></li>
+                <li><a href="quisommesnous.html">Qui sommes nous ?</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</head>
+<body>
+    <div class="a">
+        <ul>
+            <li><a href="sites.html">Sites et Monuments</a></li>
+            <li><a href="ville.html">Index des villes</a></li>
+            <li><a href="map.html">Google map</a></li>
+            <li><a href="liens.html">Liens utiles</a></li>
+        </ul>
+    </div>
+    <div class="b">
+        <iframe src="https://www.youtube.com/embed/pdueqhNqwrs" frameborder="2" allowfullscreen></iframe>
+        <iframe src="../php/news.php" frameborder="2" class="iframephp"></iframe>
+
+        
+
+    <!-- Modale contenant l'iframe -->
+    <div id="iframeModal">
+        <iframe id="modalIframe" src=""></iframe>
+    </div>
+
+    <script>
+        // Fonction pour ouvrir l'iframe dans la modale
+        function openIframe() {
+            document.getElementById("iframeModal").style.display = "block";  // Afficher la modale
+            document.getElementById("modalIframe").src = "../php/tousnews.php"; // Charger le contenu de l'iframe
+        }
+
+        function closeIframe() {
+            document.getElementById("iframeModal").style.display = "none";  // Cacher la modale
+            document.getElementById("modalIframe").src = ""; // Supprimer le contenu de l'iframe
+        }
+
+        document.getElementById('modalIframe').style.width = '760px';
+        document.getElementById('modalIframe').style.height = '400px';
+
+
+
+    </script>
+    </div>
+    <div class="c" id="galerie">
+        <h1>G A L E R I E</h1>  
+        <div class="c1">
+            <a href="../html/galerie1.html">
+                <img src="../images/geirangerfjord-norway-hgr-153246_1920-photo_shutterstock.webp"  alt="">
+                <p>Les fjords de Norvège</p>
+            </a>
+        </div> 
+        <div class="c1">
+            <a href="../html/galerie2.html">
+                <img src="../images/adobestock_179656007.webp"  alt="">
+                <p>îles Lofoten</p>
+            </a>
+        </div>
+        <div class="c1">
+            <a href="../html/galerie3.html">
+                <img src="../images/oslo-est-une-capitale-relativement-chere-photo-by-marian-rotea-on-unsplash-1645005728.jpg"  alt="">
+                <p>Oslo - La capitale</p>
+            </a>
+        </div> 
+        <div class="c1">
+            <a href="../html/galerie4.html">
+                <img src="../images/3-shutterstock-2362216879-port_532.webp"  alt="">
+                <p>Les îles de Vesterålen</p>
+            </a>
+        </div> 
+        <div class="c1">
+            <a href="../html/galerie5.html">
+                <img src="../images/bergen.jpg"  alt="">
+                <p>Bergen</p>
+            </a>
+        </div>
+        <div class="c1">
+            <a href="../html/galerie6.html">
+                <img src="../images/Slottet_i_Oslo_1.jpg"  alt="">
+                <p>Palais royal d'Oslo</p>
+            </a>
+        </div> 
+    </div>
+</body>
+
+<footer>
+    <span>Suggestions</span>
+    <span>Conditions d'utilisation</span>
+    <span>Copyright 2024-2025</span>
+</footer>
+
+</html>

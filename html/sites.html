@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Rubik+Wet+Paint&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Rubik+Wet+Paint&family=Titan+One&family=Trade+Winds&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Miltonian+Tattoo&family=Rubik+Wet+Paint&family=Titan+One&family=Trade+Winds&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Miltonian+Tattoo&family=Rubik+Wet+Paint&family=Titan+One&family=Trade+Winds&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/sites.css">
+    <title>Sites et monuments </title>
+    <nav class="banniere">
+        <p>Velkommen til Norges vakreste landskap!</p>
+    </nav>
+    <nav class="nav">
+        <div class="nav1">
+            <img src="../images/drapeau.png" alt="">
+            <p>VELKOMMEN <br>TIL NORGE</p>
+        </div>
+        <div class="nav2">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="plansite.html">Plan de site</a></li>
+                <li><a href="quisommesnous.html">Qui sommes nous ?</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</head>
+<body>
+    <div class="aa">
+        <ul>
+            <li><a href="sites.html">Sites et Monuments</a></li>
+            <li><a href="ville.html">Index des villes</a></li>
+            <li><a href="map.html">Google map</a></li>
+            <li><a href="liens.html">Liens utiles</a></li>
+        </ul>
+    </div>
+    <div class="right-sidebar hidden" id="sidebar">
+            <iframe src="https://www.youtube.com/embed/pdueqhNqwrs" frameborder="2" allowfullscreen class="ifr"></iframe>
+            <iframe src="../php/news.php" frameborder="2" class="iframephp" class="ifr1" height="310px"></iframe>
+    
+            
+    
+        <!-- Modale contenant l'iframe -->
+        <div id="iframeModal">
+            <iframe id="modalIframe" src=""></iframe>
+        </div>
+    
+        <script>
+            // Fonction pour ouvrir l'iframe dans la modale
+            function openIframe() {
+                document.getElementById("iframeModal").style.display = "block";  // Afficher la modale
+                document.getElementById("modalIframe").src = "../php/tousnews.php"; // Charger le contenu de l'iframe
+            }
+    
+            function closeIframe() {
+                document.getElementById("iframeModal").style.display = "none";  // Cacher la modale
+                document.getElementById("modalIframe").src = ""; // Supprimer le contenu de l'iframe
+            }
+    
+            document.getElementById('modalIframe').style.width = '760px';
+            document.getElementById('modalIframe').style.height = '400px';
+    
+    
+    
+        </script>
+        </div>
+    <button id="toggleButton" class="toggle-button"><</button>
+    <div class="b">
+        <img src="../images/monument.png" alt="">
+        <h1>MONUMENT</h1>
+    </div>
+    <div class="div">
+        <div class="a">
+            <div class="a1">
+                <img src="../images/licensed-image.jpeg" alt="">
+            </div>
+            <div class="a2">
+                <p>La forteresse d'Akershus, située à Oslo, est un monument emblématique et l'un des sites historiques les plus importants de Norvège. Construite au XIIIe siècle sous le règne du roi Haakon V, elle servait à protéger Oslo contre les invasions étrangères. Sa position stratégique surplombant le fjord d'Oslo en faisait un bastion défensif crucial. <br>Au fil des siècles, Akershus a évolué, passant d'une forteresse médiévale à un palais royal Renaissance au XVIIe siècle, sous l'influence danoise. Aujourd'hui, elle est un lieu symbolique où histoire et culture se rencontrent.</p>
+            </div>
+        </div>
+        <div class="a">
+            <div class="a1">
+                <img src="../images/licensed-image (1).jpeg" alt="">
+            </div>
+            <div class="a2">
+                <p>La Cathédrale de Nidaros, située à Trondheim, est le plus grand édifice religieux médiéval de Norvège et un véritable joyau de l'architecture gothique en Scandinavie. Construite sur le tombeau de Saint Olaf, le roi viking canonisé qui a unifié la Norvège, cette cathédrale est depuis des siècles un centre spirituel et un lieu de pèlerinage majeur. <br>La Cathédrale de Nidaros est bien plus qu’un monument historique. Elle est un symbole de l'identité nationale norvégienne et une source d'inspiration pour les générations passées et présentes.</p>
+            </div>
+        </div>
+        <div class="a">
+            <div class="a1">
+                <img src="../images/licensed-image (2).jpeg" alt="">
+            </div>
+            <div class="a2">
+                <p>Le Monolithe de Vigeland, ou Monolitten en norvégien, est une sculpture monumentale située au cœur du parc de sculptures de Vigeland à Oslo, le plus grand parc de sculptures au monde réalisé par un seul artiste. Cette œuvre emblématique a été conçue par le sculpteur norvégien Gustav Vigeland et est considérée comme le point culminant de son travail. <br>Le Monolithe de Vigeland est bien plus qu'une simple sculpture : c'est une réflexion profonde sur l'expérience humaine, un incontournable pour tout visiteur d'Oslo.</p>
+            </div>
+        </div>
+    </div>
+    <script >
+        function showRegisterForm() {
+            document.getElementById('loginForm').classList.remove('active');
+            document.getElementById('registerForm').classList.add('active');
+        }
+
+        function showLoginForm() {
+            document.getElementById('registerForm').classList.remove('active');
+            document.getElementById('loginForm').classList.add('active');
+        }
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggleButton = document.getElementById("toggleButton");
+            const sidebar = document.getElementById("sidebar");
+
+            toggleButton.addEventListener("click", () => {
+                const isHidden = sidebar.classList.contains("hidden");
+                if (isHidden) {
+                    sidebar.classList.remove("hidden");
+                    toggleButton.innerHTML = ">";
+                } else {
+                    sidebar.classList.add("hidden");
+                    toggleButton.innerHTML = "<";
+                }
+            });
+        });
+
+    </script>
+</body>
+
+<footer>
+    <span>Suggestions</span>
+    <span>Conditions d'utilisation</span>
+    <span>Copyright 2024-2025</span>
+</footer>
+
+</html>

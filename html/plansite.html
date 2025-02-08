@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Rubik+Wet+Paint&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Rubik+Wet+Paint&family=Titan+One&family=Trade+Winds&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Miltonian+Tattoo&family=Rubik+Wet+Paint&family=Titan+One&family=Trade+Winds&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Miltonian+Tattoo&family=Rubik+Wet+Paint&family=Titan+One&family=Trade+Winds&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/plansite.css">
+    <title>Plan Du Site</title>
+    <nav class="banniere">
+        <p>Velkommen til Norges vakreste landskap!</p>
+    </nav>
+    <nav class="nav">
+        <div class="nav1">
+            <img src="../images/drapeau.png" alt="">
+            <p>VELKOMMEN <br>TIL NORGE</p>
+        </div>
+        <div class="nav2">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="plansite.html">Plan de site</a></li>
+                <li><a href="quisommesnous.html">Qui sommes nous ?</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</head>
+<body>
+    <div class="aa">
+        <ul>
+            <li><a href="sites.html">Sites et Monuments</a></li>
+            <li><a href="ville.html">Index des villes</a></li>
+            <li><a href="map.html">Google map</a></li>
+            <li><a href="liens.html">Liens utiles</a></li>
+        </ul>
+    </div>
+    <div class="right-sidebar hidden" id="sidebar">
+        <iframe src="https://www.youtube.com/embed/pdueqhNqwrs" frameborder="2" allowfullscreen class="ifr"></iframe>
+        <iframe src="../php/news.php" frameborder="2" class="iframephp" class="ifr1" height="310px"></iframe>
+
+        
+
+    <!-- Modale contenant l'iframe -->
+    <div id="iframeModal">
+        <iframe id="modalIframe" src=""></iframe>
+    </div>
+
+    <script>
+        // Fonction pour ouvrir l'iframe dans la modale
+        function openIframe() {
+            document.getElementById("iframeModal").style.display = "block";  // Afficher la modale
+            document.getElementById("modalIframe").src = "../php/tousnews.php"; // Charger le contenu de l'iframe
+        }
+
+        function closeIframe() {
+            document.getElementById("iframeModal").style.display = "none";  // Cacher la modale
+            document.getElementById("modalIframe").src = ""; // Supprimer le contenu de l'iframe
+        }
+
+        document.getElementById('modalIframe').style.width = '760px';
+        document.getElementById('modalIframe').style.height = '400px';
+
+
+
+    </script>
+    </div>
+    <button id="toggleButton" class="toggle-button"><</button>
+    <section class="menu-section">
+        <p class="menu-description">ICI Vous trouver le plan du Site</p>
+        <div class="menu-grid">
+            <a href="../html/index.html" class="menu-item">
+                <img src="../images/home.png" alt="Accueil">
+                <p>Accueil</p>
+            </a>
+            <a href="../html/plansite.html" class="menu-item">
+                <img src="../images/checklist.png" alt="Plan De Site">
+                <p>Plan De Site</p>
+            </a>
+            <a href="../html/quisommesnous.html" class="menu-item">
+                <img src="../images/group.png" alt="Qui Sommes Nous?">
+                <p>Qui Sommes Nous ?</p>
+            </a>
+            <a href="../html/contact.php" class="menu-item">
+                <img src="../images/chat (1).png" alt="Contact">
+                <p>Contact</p>
+            </a>
+            <a href="../html/sites.html" class="menu-item">
+                <img src="../images/parthenon.png" alt="Sites et Monuments">
+                <p>Sites et Monuments</p>
+            </a>
+            <a href="../html/ville.html" class="menu-item">
+                <img src="../images/city.png" alt="Index Des Villes">
+                <p>Index Des Villes</p>
+            </a>
+            <a href="../html/map.html" class="menu-item">
+                <img src="../images/map2.png" alt="Google Map">
+                <p>Google Map</p>
+            </a>
+            <a href="../html/liens.html" class="menu-item">
+                <img src="../images/link.png" alt="Liens Utiles">
+                <p>Liens Utiles</p>
+            </a>
+            <a href="../html/index.html#galerie" class="menu-item">
+                <img src="../images/image-galery.png" alt="Galerie">
+                <p>Galerie</p>
+            </a>
+        </div>
+    </section>
+    <script >
+        function showRegisterForm() {
+            document.getElementById('loginForm').classList.remove('active');
+            document.getElementById('registerForm').classList.add('active');
+        }
+
+        function showLoginForm() {
+            document.getElementById('registerForm').classList.remove('active');
+            document.getElementById('loginForm').classList.add('active');
+        }
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggleButton = document.getElementById("toggleButton");
+            const sidebar = document.getElementById("sidebar");
+
+            toggleButton.addEventListener("click", () => {
+                const isHidden = sidebar.classList.contains("hidden");
+                if (isHidden) {
+                    sidebar.classList.remove("hidden");
+                    toggleButton.innerHTML = ">";
+                } else {
+                    sidebar.classList.add("hidden");
+                    toggleButton.innerHTML = "<";
+                }
+            });
+        });
+
+    </script>
+</body>
+
+<footer>
+    <span>Suggestions</span>
+    <span>Conditions d'utilisation</span>
+    <span>Copyright 2024-2025</span>
+</footer>
+
+</html>
